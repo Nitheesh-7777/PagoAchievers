@@ -22,17 +22,14 @@ body .container {
   background: #fff;
   border-color: transparent;
 }
-a
-{
-  
-}
+
 #filter-buttons button:hover {
   background: #ddd;
 }
 
 #filter-buttons button.active {
   color: #fff;
-  background: #6c757d;
+  background: #4181b9;
 }
 
 #filterable-cards .card {
