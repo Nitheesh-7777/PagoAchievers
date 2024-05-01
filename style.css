@@ -155,7 +155,9 @@ section h2 {
 }
 
 section > p {
+  
   text-align: center;
+  
 }
 
 section .cards {
@@ -370,7 +372,7 @@ footer a {
   }
 
   section > p {
-    padding: 0px 1px 0px 1px;
+    padding: 0px 3px 0px 3px;
     text-align: center;
   }
 
