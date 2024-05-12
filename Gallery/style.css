@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #e0e0e0 !important;
+  background: #faf9e8 !important;
 }
 
 body .container {
@@ -19,12 +19,12 @@ body .container {
 #filter-buttons button {
  
   border-radius: 3px;
-  background: #fff;
+  background: #d1b976;
   border-color: transparent;
 }
 
 #filter-buttons button:hover {
-  background: #ddd;
+  background: #e6e598;
 }
 
 #filter-buttons button.active {
