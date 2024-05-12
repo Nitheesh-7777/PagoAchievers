@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAGO ACHIEVERS</title>  
-    
     <link rel="shortcut icon" href="images/service/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="Toast Notification in JavaScript/alert.css">
     <link rel="stylesheet" href="style.css">
-   
+    <!-- Mail script -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "FHf16L1A7lY-n2rs0",
+          });
+      })();
+    </script>
+
     </head>
   <body>
 
@@ -167,12 +179,17 @@
             </div>          
           </div>
           <div class="col form">
-            <form>
-              <input type="text" placeholder="Name*" required>
-              <input type="email" placeholder="Email*" required>
-              <textarea placeholder="Message*" required></textarea>
-              <button id="submit" type="submit">Send Message</button>
+            <form id="contact" name="theform">
+              <input type="text" id="name" name="name" placeholder="Name*" onkeyup="checkform()">
+              <input type="email" id="mail" name="email" placeholder="Email*" onkeyup="checkform()">
+              <textarea id="message" name="message" placeholder="message*" onkeyup="checkform()"></textarea>
+              <!-- <button type="submit" onclick="SendMail()">Send Message</button> -->
+              <ul class="notifications"></ul>
+              <div class="buttons">
+                <input type="submit" onclick="SendMail()" class="btn" id="success" value="Send Message">
+              </div>
             </form>
+
           </div>
         </div>
       </section>
@@ -187,7 +204,10 @@
         </div>
       </footer>
 
-
+      <!-- Alert box -->
+      
+      
+      <script src="Toast Notification in JavaScript/alert.js"></script>
       <script src="script.js"></script>
   </body>
 </html>
