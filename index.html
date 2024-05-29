@@ -9,10 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style profile.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Mail script -->
-    
-
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "FHf16L1A7lY-n2rs0",
+      });
+   })();
+</script>
     </head>
   <body>
 
@@ -65,7 +73,7 @@
             <p>Employability & Campus to Corporate</p>
           </li>
           <li class="card1">
-            <img src="https://blog.polleverywhere.com/hubfs/Imported_Blog_Media/benefits-of-employee-engagement-blog-asset-4.png" alt="img">
+            <img src="images/service/IELTS.jpeg" alt="img">
             <h3 class="bold">ENGLISH PROFICIENCY</h3>
             <p>Lingua(LSRW), Business English Communication (BEC), TOFEL & IELTS</p>
           </li>
@@ -95,7 +103,7 @@
             <p>Special inter-corporate training, Client management, Business analytics.</p>
           </li>
           <li class="card1">
-            <img src="https://d502jbuhuh9wk.cloudfront.net/articles/5fe041c10cf2fe5519faa314/ZFta2ieltsg.png" alt="img">
+            <img src="images/service/Empowerment.jpg" alt="img">
             <h3 class="bold">General Training</h3>
             <p>Woman Empowerment Training Program, Customer Handling Skills, Hospital management, Hotel customer management service. </p>
           </li>
@@ -153,18 +161,21 @@
         <h2 class="bold">About Us</h2>
         <div class="row mission-vision">
           <h3>Our Mission</h3>
-          <p class="para"><b>T</b>o provide a safe environment with corporate atmosphere for their career with empowering in every organization on the planet to achieve more.</p>
+          <p class="para">To provide a safe environment with corporate atmosphere for their career with empowering in every organization on the planet to achieve more.</p>
           <h3>Our Vision</h3>
-          <p class="para"><b>O</b>ur Vision is to develop well rounded, confident and responsible individuals who aspire to achieve their full potential. To create a better everyday life for the many students.</p>
+          <p class="para">Our Vision is to develop well rounded, confident and responsible individuals who aspire to achieve their full potential. To create a better everyday life for the many students.</p>
         </div>
         <br>
+        <br>
          <div class="card">
-          <img src="images/profile.jpg" alt="Avatar" style="width:100%; border-radius: 10px 10px 0px 0px;">
+          <br>
+          <img src="images/model.png" alt="Avatar" width="220px">
           <div class="container">
-            <h4>PROPRIETOR :- <b style="color: #007bff;">EBEN PAUL<br> B.com., M.com., MBA., Ph.D.</b></h4>
+            <h4><b style="color: #007bff;"> Dr. Paul Ravichandran B.com., M.com., MBA., Ph.D.</b></h4>
+            <P><b>(PROPRIETOR)</b></P>
             <br><p>Seasoned professional with 18 years of experience as a Hiring Manager in global outsourcing MNCs, specializing in communication, process, and product training. Expert in creating interactive learning environments and conducting corporate and college training programs, particularly in the FMCG sector, focusing on upskilling and leadership development.</p>
           </div>
-        </div>        
+        </div>      
   </section>
 
   <P  id="contact"></P>
@@ -174,7 +185,7 @@
         <div class="row">
           <div class="col information">
             <div class="contact-details">
-              <p><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/KQ9UtVvzEEwfz1T26" target="_blank" class="location">&nbsp; <span>Our Location</span> </a></p>
+              <p><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/KQ9UtVvzEEwfz1T26" target="_blank" class="location">&nbsp; <span style="font-weight:500;">Our Location</span> </a></p>
               <p><i class="fas fa-envelope"></i>&nbsp;pagoachievers.com </p>
               <p><i class="fas fa-phone"></i> +91 9840369759</p>
               <p><i class="fas fa-clock"></i> Monday - Friday: 8:00 AM - 8:00 PM</p>
@@ -183,39 +194,46 @@
             </div>          
           </div>
           <div class="col form">
-            
-            <form method="dialog" id="contact">  
-
+            <form method="dialog" name="contact-form" id="contactForm">  
               <span id="nameFeedback"></span>
-
               <input type="text" id="name" name="name" placeholder="Name*" required>
-
               <span id="emailFeedback" style="color: red;"></span>
-
               <input type="email" id="mail" name="email" placeholder="Email*" required>
-
               <span id="messageFeedback" style="color: red;"></span>
-
               <textarea id="message" name="message" placeholder="message*" required></textarea>
-
-              <button type="submit" onclick="validateEmailInput()">Send Message</button>
-
+              <!-- Toast start -->
+              <ul class="notifications"></ul>
+              <div class="buttons">
+                <button type="submit"  class="btn" id="success">Send Message</button>
+              </div>
+              <!-- Toast end -->
             </form>
-
           </div>
         </div>
       </section>
-  
       <footer>
         <div>
           <span class="disable">Copyright © 2024 All Rights Reserved</span>
-          <span class="developer"><a href="https://nitheesh-7777.github.io/portfolio/" target="_blank">Created by NITHEESH KUMAR.C B.E.,</a></span>
+          <span class="developer"> <marquee direction="left"><a href="https://nitheesh-7777.github.io/portfolio/" target="_blank">Created by <span style="color: #cac85b;">NITHEESH KUMAR.C</span></a></marquee> </span>
           <span class="link">
               <a href="#">Home</a>
               <a href="#contact">Contact</a>
           </span>
         </div>
       </footer>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                swal("Thank you!", "Message successfully sent.", "success")
+                .then(() => {
+                  SendMail();
+                    form.reset();
+                });
+            });
+        });
+    </script>
   <script src="script.js"></script>
   </body>
 </html>
