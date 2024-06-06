@@ -7,23 +7,35 @@
     <link rel="shortcut icon" href="images/service/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <!-- Mail script -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "FHf16L1A7lY-n2rs0",
-      });
-   })();
-</script>
-    </head>
-  <body>
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "FHf16L1A7lY-n2rs0",
+          });
+      })();
+    </script>
+    <!-- End -->
+    <!-- Text script -->
+    <script type='text/javascript'>
+      var index = 0;
+      var text = '80,000 + Students trained | 15,000 + Students placed';
+      function type()
+      {
+      document.getElementById('screen').innerHTML += text.charAt(index);
+      index += 1;
+      var t = setTimeout('type()',70);
+      }
 
+      </script>
+      <!-- End -->
+    </head>
+  <body onload='type()'>
     <header>
         <nav class="navbar">
           <h2 class="logo"><a href="#"> <img src="images/service/Favicon.png" width="25px">&nbsp; PAGO ACHIEVERS</a></h2>
@@ -41,6 +53,8 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#home" class="icon"><i class="fa-brands fa-square-facebook"></i></a> <a href="#home" class="icon"><i class="fa-brands fa-linkedin"></i></a> <a href="#home" class="icon"><i class="fa-brands fa-square-instagram"></i></a></li>
+           
           </ul>
         </nav>
       </header>
@@ -48,11 +62,23 @@
       <section class="homepage" id="home">
         <div class="content">
           <div class="text">
+            <br>
+            <br>
+            
             <h1>Better Education</h1>
-          
-            <h3>Unlocking better education without breaking the bank.</h3>  <br>
-            <p>
-              PAGO Achievers is your trusted partner in professional training and placements for over 4 years.</div>
+            
+            <p style="padding-bottom:6px; font-weight: 650;">PAGO Achievers is your trusted partner in professional training and placements for over 4 years.
+            <br>
+            <br>
+              <center>
+            
+            <table style="text-align: center;font-size: 15px;  background-color: rgba(196, 194, 194, 0.5);"> 
+              <tr><td colspan="2" style="padding-left: 5px; padding-right: 5px;">Achievement-focused initiatives tailored for campuses and students.</td></tr>
+              <tr><td colspan="2" id="screen"></td></tr>
+            </table>
+            
+            </center>
+          </div>
           <a href="#services">Services</a>
         </div>
       </section>
@@ -80,12 +106,12 @@
           <li class="card1">
             <img src="images/service/Technical.jpg" alt="img">
             <h3 class="bold">TECHNICAL TRAINING</h3>
-            <p>C, C++, Python, Java, Php, Java Script, Angular JS, Android, Data Structure, Data Science, HTML, CSS.</p>
+            <p>C, C++, Python, Java, Php, HTML, CSS, Java Script, Angular JS, PLSQL, Flutter & Kotlin, Data Structure.</p>
           </li>
           <li class="card1">
             <img src="images/service/Full-stack-development.jpg" alt="img">
             <h3 class="bold">ADVANCED TECH</h3>
-            <p>FULLSTACK, PLSQL</p>
+            <p>Full Stack, Data Science, Artificial Intelligence (Machine Learning & Deep Learning)</p>
           </li>
           <li class="card1">
             <img src="https://flearningstudio.com/wp-content/uploads/2022/04/soft-skill-training-101-414x364-1.jpg" alt="img">
@@ -100,22 +126,37 @@
           <li class="card1">
             <img src="https://img.freepik.com/premium-vector/team-is-business-training_18660-3293.jpg" alt="img">
             <h3 class="bold">CORPORATE TRAINING</h3>
-            <p>Special inter-corporate training, Client management, Business analytics.</p>
+            <p>Special inter-corporate training, Client management, Business analytics,Transition methodology, 
+              Induction training program, 
+              Process & Product ,
+              Voice & Accent training program.</p>
           </li>
           <li class="card1">
             <img src="images/service/Empowerment.jpg" alt="img">
             <h3 class="bold">General Training</h3>
-            <p>Woman Empowerment Training Program, Customer Handling Skills, Hospital management, Hotel customer management service. </p>
+            <p>POSH (Prevention of Sexual Harrasment), Woman Empowerment Program, Customer Handling Skills, Hospital management, Hotel customer management skills. </p>
           </li>
+          <li class="card1">
+            <img src="https://img.freepik.com/free-vector/colleagues-working-together-project_74855-6308.jpg" alt="img">
+            <h3 class="bold">Classroom Training</h3>
+            <p>We offfered long term and short term Personality development, Aptitude, Reasoning and Technical skills to make job readiness.</p>
+          </li>
+          <li class="card1">
+            <img src="https://www.euroschoolindia.com/wp-content/uploads/2023/08/formative-and-summative-assessments.jpg" alt="img">
+            <h3 class="bold">Assessment</h3>
+            <p>We are conducting pre-assessment, mid-assessment and final assessment to analyze the student level / to define the students(Walk-in interviews, Mock test based on assessments, we validate with our analysis model).</p>
+          </li>
+
+
+
+
         </ul>
       </section>
 <P id="portfolio"></P>
       <section class="portfolio">
         <h2 class="bold">Our Portfolio</h2>
-        <p><b>Pago Achievers</b> is a professionally managed
-          organization in the field of "Training and Placements"
-          for the past <b>4 years.</b>
-          Incorporated with the aim of offering global training and placement solutions to aspiring candidates and the corporate sector.</p>
+        <p>
+         <b>Pago Achievers</b> is a professionally managed organization specializing in "Training and Placement" services for the past <b>four years</b> . Founded with the objective of providing comprehensive global training and placement solutions to aspiring individuals and the corporate sector, Pago Achievers offers a range of Campus to Corporate training program.</p>
         <ul class="cards">
           <li class="card1">
             <img src="https://ivanmisner.com/wp-content/uploads/2022/09/Perfect-Practice-Makes-Perfect.jpg" alt="img">
@@ -131,17 +172,15 @@
             <h3 class="bold">OUR EXPERTISE</h3>
            <p>
               Company Specific 
-              TCS, COGNIZANT, CAPEGEMINI
-              INFOSYS, ACCENTURE, 
-              TECH MAHINDRA, HCL, 
-              WIPRO, SYNTEL , HEXAWARE,
+              TCS, Cognizent, Capegemini,
+              Infoys, Accenture, 
+              Tech Mahindra, HCL, 
+              Wipro, Syntel , Hexaware,
               DXC TECH, ZOHO 
               with
               “COCUBES, AMCAT TRAINING”.
             </p>
           </li>
-
-
           <li class="card1">
             <img src="https://files.askiitians.com/cdn1/images/2014918-1624477-990-library-books.jpg" alt="img">
             <h3 class="bold">COMPETITIVE EXAMS </h3>
@@ -161,19 +200,23 @@
         <h2 class="bold">About Us</h2>
         <div class="row mission-vision">
           <h3>Our Mission</h3>
-          <p class="para">To provide a safe environment with corporate atmosphere for their career with empowering in every organization on the planet to achieve more.</p>
+          <p class="para">Pago Achievers is to provide a safe corporate environment and empower every organization on the planet to achieve more through comprehensive global training and specialized inter-corporate programs.</p>
           <h3>Our Vision</h3>
-          <p class="para">Our Vision is to develop well rounded, confident and responsible individuals who aspire to achieve their full potential. To create a better everyday life for the many students.</p>
+          <p class="para">Pago Achievers is to develop well-rounded, confident, and responsible individuals who aspire to achieve their full potential, creating a better everyday life through comprehensive global training and placement solutions for the corporate sector.</p>
         </div>
         <br>
         <br>
-         <div class="card">
-          <br>
-          <img src="images/model.png" alt="Avatar" width="220px">
-          <div class="container">
-            <h4><b style="color: #007bff;"> Dr. Paul Ravichandran B.com., M.com., MBA., Ph.D.</b></h4>
-            <P><b>(PROPRIETOR)</b></P>
-            <br><p>Seasoned professional with 18 years of experience as a Hiring Manager in global outsourcing MNCs, specializing in communication, process, and product training. Expert in creating interactive learning environments and conducting corporate and college training programs, particularly in the FMCG sector, focusing on upskilling and leadership development.</p>
+        <div class="card">
+          <div>
+            <figure>
+             <img src="images/model.png" alt="Avatar" width="220px">
+             <figcaption><h4><b style="color: #15747a;">Eben Paul</b></h4></figcaption>
+             <P style="color: rgb(43, 36, 26);"><b>Founder & CEO</b></P>
+             <br>
+            </figure>
+          </div>
+          <div class="about-ceo">
+            <p>Seasoned professional with 18 years of corporate experience as a Hiring Manager in global outsourcing MNCs, specializing in communication, process, and product training. Expert in creating interactive learning environments and conducting corporate and college training programs, particularly in the FMCG sector, focusing on upskilling and leadership development.</p>
           </div>
         </div>      
   </section>
@@ -214,7 +257,7 @@
       <footer>
         <div>
           <span class="disable">Copyright © 2024 All Rights Reserved</span>
-          <span class="developer"> <marquee direction="left"><a href="https://nitheesh-7777.github.io/portfolio/" target="_blank">Created by <span style="color: #cac85b;">NITHEESH KUMAR.C</span></a></marquee> </span>
+          <span class="developer"> <marquee direction="left"><a href="https://www.linkedin.com/company/looak-tech/" target="_blank">Created by <span style="color: #cac85b;">NITHEESH KUMAR.C LOOAK Tech&nbsp;<img src="images/looak-logo_300px_300px.jpg" alt="LOOAK Tech" width="25px" style="border-radius: 20%; "></span></a></marquee> </span>
           <span class="link">
               <a href="#">Home</a>
               <a href="#contact">Contact</a>
