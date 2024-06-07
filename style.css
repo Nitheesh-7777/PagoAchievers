@@ -6,14 +6,12 @@
   font-family: "Poppins", sans-serif;
 }
 /* Alert style */
-
 html 
 {
   scroll-behavior: smooth;
 }
 body 
-{
-  
+{ 
   background: #f2f2f2;
 }
 .bold
@@ -43,17 +41,14 @@ header
 {
   display: none;
 }
-
 .navbar #hamburger-btn {
   cursor: pointer;
   display: none;
 }
-
 .navbar .all-links {
   display: flex;
   align-items: center;
 }
-
 .navbar .all-links li {
   position: relative;
   list-style: none;
@@ -69,7 +64,6 @@ header
   align-items: center;
   margin-left: 0;
 }
-
 header a, footer a {
   font-weight: bold;
   margin-left: 40px;
@@ -79,7 +73,6 @@ header a, footer a {
   padding: 20px 0;
   display: inline-block;
 }
-
 header a:hover, footer a:hover {
   color: #cac85b;
 }
@@ -128,7 +121,6 @@ header a:hover, footer a:hover {
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-
 .content a {
   color: #000;
   display: block;
@@ -143,7 +135,6 @@ header a:hover, footer a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
-
 .content a:hover {
   color: #fff;
   background: rgba(255,255,255,0.3);
@@ -155,17 +146,12 @@ section {
   flex-direction: column;
   padding: 78px 0 0;
 }
-
 section h2 {
   font-size: 2rem;
 }
-
 section > p {
-  
-  text-align: center;
-  
+  text-align: center; 
 }
-
 section .cards {
   display:flex;
   flex-wrap: wrap;
@@ -186,13 +172,11 @@ section.about {
 .about .company-info {
   margin-top: 30px;
 }
-
 .about h3 {
   font-size: x-large;
   font-weight: 600; 
   margin: 30px 0 10px;
 }
-
 .about .team {
   text-align: left;
   width: 100%;
@@ -218,20 +202,22 @@ section .cards .card1 {
 .services .cards .card1:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+.card
+{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/027/231/623/original/illustration-graphic-of-aesthetic-background-template-with-minimalist-pastel-colors-and-abstract-fluid-shapes-simple-and-minimalist-background-template-vector.jpg");
 
+  background-repeat: no-repeat;
+}
 .portfolio .cards .card1 {
   padding: 0 0 20px;
 }
-
-.services .card1 img {
-  
+.services .card1 img { 
   width: 150px;
   height: 150px;
   margin-bottom: 20px;
   border-radius: 12%;
   object-fit: cover;
 }
-
 .portfolio .card1 img {
   /* align-content: center; */
   width: 100%;
@@ -268,8 +254,6 @@ section .cards .card1 {
 {
   border-radius: 100%;
 }
-
-
 .about .row {
   padding: 0 10px;
 }
@@ -381,7 +365,6 @@ footer a {
   text-align: center; 
   animation: animate 2s linear infinite; 
 }
-
 @media screen and (max-width: 1050px) {
   .navbar .all-links {
     position: fixed;
@@ -393,19 +376,15 @@ footer a {
     background: #333;
     transition: left 0.3s ease;
   }
-
   .navbar #menu-toggler:checked~.all-links {
     left: 0;
   }
-
   .navbar .all-links li {
     font-size: 16px;
   }
-
   .navbar #hamburger-btn {
     display: block;
   }
-
   section > p {
     padding: 0px 3px 0px 3px;
     text-align: center;
@@ -425,7 +404,6 @@ footer a {
   {
     padding: 2px;
   }
-
   .homepage .content h1 {
     font-size: 35px;
     font-weight: 700;
@@ -435,24 +413,19 @@ footer a {
   .homepage .content .text {
     font-size: 17px;
   }
-
   .content a {
     font-size: 17px;
     padding: 9px 20px;
   }
-
   .contact .row {
     flex-direction: column;
   }
-
   .contact .row .col {
     width: 100%;
   }
-
   .contact .row .col:last-child {
     margin-top: 40px;
   }
-
   footer a {
     height: 0;
   }
@@ -462,8 +435,6 @@ footer a {
   }
   footer .developer
   {
-   
     font-size: 15px;
   }
 }
-
