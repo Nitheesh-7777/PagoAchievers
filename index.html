@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <!-- preloader -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Mail script -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -86,12 +89,20 @@
         }
     </style>
     </head>
-  <body onload='type()'>
+  <body id="home" onload='type()'>
+  <!-- Preloader code -->
+    <div class="loader">
+      <div></div>
+    </div>
+<div class="load">  
+  <!-- end -->
+  <!-- whatsapp icon -->
     <div id="whatsapp">
       <a href="https://wa.me/916383756693" target="_blank" id="toggle1" class="wtsapp">
       <i class="fa-brands fa-whatsapp"></i>
       </a>
   </div>
+  <!-- end -->
     <header>
         <nav class="navbar">
           <h2 class="logo"><a href="#"> <img src="images/service/Favicon.png" width="25px">&nbsp; PAGO ACHIEVERS</a></h2>
@@ -117,7 +128,6 @@
         <div class="content">
           <div class="text">
             <br>
-            
             <h1>Better Education</h1>
             <p style="padding-bottom:6px; font-weight: 650;">PAGO Achievers is your trusted partner in professional training and placements for over 4 years.
             <br>
@@ -207,27 +217,20 @@
           <div class="card__container">
              <article class="card__article">
                 <img src="images/service/vision.jpg" alt="image" class="card__img">
- 
                 <div class="card__data">
                    <span class="card__description">Enhance Employability, with Experience, Empowering minds, Transforming Lives, Ensure enriched knowledge in sessions, Empower and transform the each session</span>
-                   <h2 class="card__title">TRAINING VISION</h2>
-                  
+                   <h2 class="card__title">TRAINING VISION</h2>  
                 </div>
              </article>
- 
              <article class="card__article">
                 <img src="images/service/businessmen-talking-about-business-cartoon-vector-24374456.jpg" alt="image" class="card__img">
- 
                 <div class="card__data">
                    <span class="card__description">Company Specific TCS, Cognizent, Capegemini, Infoys, Accenture, Tech Mahindra, HCL, Wipro, Syntel , Hexaware, DXC TECH, ZOHO with “COCUBES, AMCAT TRAINING”.</span>
                    <h2 class="card__title">OUR EXPERTISE</h2>
-                   
                 </div>
              </article>
- 
              <article class="card__article">
                 <img src="images/service/Competitive-examinations-in-india-for-higher-education.png" alt="image" class="card__img">
- 
                 <div class="card__data">
                    <span class="card__description">BANK PO & CLERICAL, SSC, RRB, AAI, UPSC (CSAT PAPER)</span>
                    <h2 class="card__title">COMPETITIVE EXAMS</h2>
@@ -263,7 +266,7 @@
           </div>
         </div>      
   </section>
-  <P  id="contact"></P>
+  <P id="contact"></P>
       <section class="contact">
         <h2 class="bold">Contact Us</h2>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
@@ -301,6 +304,17 @@
           <span class="developer"> <marquee direction="left">Copyright © 2024 All Rights Reserved <a href="https://www.linkedin.com/company/looak-tech/" target="_blank">Created by <span style="color: #cac85b;">NITHEESH KUMAR.C LOOAK Tech&nbsp;<img src="images/looak-logo_300px_300px.jpg" alt="LOOAK Tech" width="25px" style="border-radius: 20%; "></span></a></marquee> </span>
         </div>
       </footer>
+<!-- loader end -->
+</div>
+      <!-- preloader script -->
+      <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".load").fadeIn(1000);
+        });
+    </script>
+    <!-- end -->
+     <!-- mail validation -->
       <script>
         document.addEventListener("DOMContentLoaded", function() {
             const form = document.getElementById('contactForm');
@@ -314,6 +328,8 @@
             });
         });
     </script>
+    <!-- end -->
+
   <script src="script.js"></script>
   </body>
 </html>
